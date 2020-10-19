@@ -1,0 +1,2 @@
+cp chromedriver /usr/local/bin
+cp tax-scraper.py /usr/local/bin
