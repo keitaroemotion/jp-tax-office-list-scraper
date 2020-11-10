@@ -41,7 +41,8 @@ for line in lines:
     for _line in filter(lambda x: 'pdf' not in x and 'location' in x and '<td><ahref' in x, _lines): 
         lsp = _line.split("\">")
         if(len(lsp) > 1):
-            print(lsp[1].replace("</a>", "").replace("</td>", ""))
+            
+            print(link.split('/')[-1].replace('.htm', '') + ' ' + lsp[1].replace("</a>", "").replace("</td>", ""))
         else:
             print('ERROR')
 
